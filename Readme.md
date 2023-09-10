@@ -8,13 +8,13 @@
 
 1. Required & Doing:
 
-   > Designed a nice interface powered by React JS, Tailwind CSS & Material UI.
-   > Has a relevent page loading animation.
-   > A simple but good looking navigation bar with login functionality and user profile.
-   > Has a protected route (Beers).
-   > A nice true login page. After successfully login user will autometic navigate the targeted route.
-   > Every beer card contains some relevent info including image.
-   > Only home page has 6 beer card and many more in beer page with Infinite Scroll (but there is no library used for this)
+   > - Designed a nice interface powered by React JS, Tailwind CSS & Material UI.
+   > - Has a relevent page loading animation.
+   > - A simple but good looking navigation bar with login functionality and user profile.
+   > - Has a protected route (Beers).
+   > - A nice true login page. After successfully login user will autometic navigate the targeted route.
+   > - Every beer card contains some relevent info including image.
+   > - Only home page has 6 beer card and many more in beer page with Infinite Scroll (but there is no library used for this)
 
 <br/>
 
@@ -27,6 +27,7 @@
 - "@fortawesome/react-fontawesome"
 - "@mui/icons-material"
 - "@mui/material"
+- "aos"
 - "axios"
 - "env"
 - "firebase"

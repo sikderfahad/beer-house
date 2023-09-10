@@ -16,8 +16,11 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import useDate from "../../hooks/useDate";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { create } from "@emotion/react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ExpandMore = styled((props) => {
   const { ...other } = props;
@@ -30,6 +33,14 @@ const ExpandMore = styled((props) => {
 }));
 
 const BeerCard = ({ beer }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      AOS.init();
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const {
     name,
     first_brewed,
@@ -51,7 +62,7 @@ const BeerCard = ({ beer }) => {
   };
 
   return (
-    <div>
+    <div data-aos="zoom-in-up">
       <Card>
         <CardHeader
           avatar={
