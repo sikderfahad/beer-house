@@ -1,0 +1,33 @@
+.active {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+}
+.pending {
+  background: linear-gradient(90deg, #fe7e7e 0%, #e8ff73 100%);
+}
+
+.navLink {
+  transition: 0.3s ease-in;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  background: linear-gradient(90deg, #37ea2e 0%, #ed26b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+.active,
+.pending {
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

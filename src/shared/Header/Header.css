@@ -1,0 +1,55 @@
+.header {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+}
+
+.header-bg {
+  background: url(../../assets/img/Logo/Vector-1.png),
+    linear-gradient(
+      90deg,
+      rgba(126, 144, 254, 0.05) 0%,
+      rgba(152, 115, 255, 0.05) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.logo h1 span:nth-child(1) {
+  margin-right: -21px;
+  transform: rotate(320deg) translate(20px, -10px);
+  display: inline-block;
+  font-size: 40px;
+  -webkit-text-stroke: 2px #7e90fe;
+  color: transparent;
+  text-shadow: -1px -1px 0 #6047ec1a, 1px -1px 0 #6047ec1a, -1px 1px 0 #6047ec1a,
+    1px 1px 0 #6047ec1a;
+}
+
+.logo h1 span:nth-child(2) {
+  -webkit-text-stroke: 2px #111;
+  color: transparent;
+  display: inline-block;
+  font-size: 30px;
+  text-shadow: -1px -1px 0 #11111117, 1px -1px 0 #11111117, -1px 1px 0 #11111117,
+    1px 1px 0 #11111117;
+}
+
+.logo-animate {
+  animation: logoAnimate 5s ease-in 1s infinite;
+}
+
+@keyframes logoAnimate {
+  0% {
+    color: rgb(39, 38, 38);
+  }
+
+  100% {
+    -webkit-text-stroke: 2px #7e90fe;
+    color: transparent;
+    text-shadow: -1px -1px 0 #6047ec1a, 1px -1px 0 #6047ec1a,
+      -1px 1px 0 #6047ec1a, 1px 1px 0 #6047ec1a;
+  }
+}
