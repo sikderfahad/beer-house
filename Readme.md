@@ -1,4 +1,4 @@
-![Logo](/src/assets/polar-bear.png)
+![Landing page of Beer House](https://i.ibb.co/T2X8Tsn/beer-house.png)
 
 <br/>
 
